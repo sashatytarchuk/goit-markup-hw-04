@@ -377,8 +377,8 @@ body{
     fill: none;
 }
 
-.team-socials-link:hover{
-    fill: var(--active-button-color);
+.team-socials.background:hover {
+    fill: var(--hover-color);
 }
 
 .team-socials-item:not(:last-child){
