@@ -377,8 +377,12 @@ body{
     fill: none;
 }
 
-.team-socials.background:hover {
+.team-socials.background:hover{
     fill: var(--hover-color);
+}
+
+.team-socials.vectors:hover {
+    fill: var(--white-color);
 }
 
 .team-socials-item:not(:last-child){
