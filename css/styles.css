@@ -387,6 +387,18 @@ body{
     margin-right: 10px;
 }
 
+.our-clients-list{
+    display: flex;
+}
+
+.our-clients-item{
+
+}
+
+.our-clients-icon{
+
+}
+
 .logo-link-footer{
     background-color:var(--header-footer-background-color);
     color: var(--white-color);
