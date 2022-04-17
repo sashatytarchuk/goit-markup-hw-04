@@ -21,6 +21,7 @@
     --header-border-color: #ECECEC;
     --card-border-color: #EEEEEE;
     --icon-background-color: #F5F4FA;
+    --thumb-border-color: #AFB1B8;
 
 }
 
@@ -277,9 +278,6 @@ body{
     margin-bottom: 30px;
 }
 
-
-
-
 .advantages-heading{
     color: var(--headings-color);
     font-size: 14px;
@@ -379,7 +377,7 @@ body{
     fill: none;
 }
 
-.team-socials:hover{
+.team-socials-link:hover{
     fill: var(--active-button-color);
 }
 
@@ -391,12 +389,32 @@ body{
     display: flex;
 }
 
-.our-clients-item{
-
+.our-clients-item:not(:last-child){
+    margin-right: 30px;
 }
 
 .our-clients-icon{
+    width: 106px;
+    height: 60px;
+}
 
+.our-clients-icon:hover{
+    fill: var(--hover-color);
+}
+
+.clients-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    background-color: none;
+    border: 1px solid var(--thumb-border-color);
+    border-radius: 4px;
+}
+
+.clients-thumb:hover{
+    border: 1px solid var(--hover-color);
 }
 
 .logo-link-footer{
