@@ -20,6 +20,7 @@
     --background-light-blue-color: #F5F4FA;
     --header-border-color: #ECECEC;
     --card-border-color: #EEEEEE;
+    --icon-background-color: #F5F4FA;
 
 }
 
@@ -29,7 +30,7 @@ ul{
     list-style: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -107,6 +108,19 @@ body{
     background-color: var(--header-footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer-heading{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
 }
 
 .logo-web {
@@ -187,6 +201,8 @@ body{
 
 .main{
    background-color:var(--header-footer-background-color); 
+   background-image: linear-gradient( to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background_img.jpg);
+   background-size: 1600px;
    padding: 200px 0;
 }
 
@@ -217,6 +233,7 @@ body{
     cursor: pointer;
     margin: 30px auto 0;
     padding: 10px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-offer:hover {
@@ -243,6 +260,28 @@ body{
 .advantages-list>.list-item:last-child{
     margin-right: 0;
 }
+
+.advantages-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.thumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--icon-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.team-socials{
+    width: 20px;
+    height: 20px;
+}
+
 
 .advantages-heading{
     color: var(--headings-color);
@@ -299,6 +338,9 @@ body{
     width: 270px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+                0 1px 1px 0 rgba(0, 0, 0, 0.14),
+                0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .list-item.team-list:not(:last-child){
@@ -434,16 +476,25 @@ body{
 .filter-button:hover {
     background-color: var(--button-hover-color);
     color: var(--white-color);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                0 1px 2px rgba(0, 0, 0, 0.08),
+                0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button:focus {
     background-color: var(--button-hover-color);
     color: var(--white-color);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                0 1px 2px rgba(0, 0, 0, 0.08),
+                0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button:active{
     background-color: var(--active-button-color);
     color: var(--white-color);
+    box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1),
+                0 1px 2px rgba(0, 0, 0, 0.08),
+                0 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-heading{
@@ -477,8 +528,19 @@ body{
     margin-top: -30px;
 }
 
-.filter-cards-list>.list-item{
+.filter-item {
+    list-style: none;
+    padding: 0;    
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 90px) / 3);
+    
 }
+
+.filter-item:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+                0 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
