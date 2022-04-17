@@ -374,15 +374,16 @@ body{
     width: 44px;
     height: 44px;
     stroke-width: 0;
-    fill: none;
+    fill: var(--thumb-border-color);
 }
 
-.team-socials.background:hover{
-    fill: var(--hover-color);
-}
-
-.team-socials.vectors:hover {
+.team-socials:hover{
     fill: var(--white-color);
+}
+
+.team-social-link:hover{
+    background-color: var(--hover-color);
+    border-radius: 50%;
 }
 
 .team-socials-item:not(:last-child){
