@@ -74,6 +74,7 @@ nav{
 
 .contacts-links{
     display: flex;
+    align-items: center;
 }
 
 .mail-icon{
