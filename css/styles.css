@@ -277,10 +277,7 @@ body{
     margin-bottom: 30px;
 }
 
-.team-socials{
-    width: 20px;
-    height: 20px;
-}
+
 
 
 .advantages-heading{
@@ -362,12 +359,32 @@ body{
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .team-info{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.team-socials-list{
+    display: flex;
+    justify-content: center;
+}
+
+.team-socials{
+    width: 44px;
+    height: 44px;
+    stroke-width: 0;
+    fill: none;
+}
+
+.team-socials:hover{
+    fill: var(--active-button-color);
+}
+
+.team-socials-item:not(:last-child){
+    margin-right: 10px;
 }
 
 .logo-link-footer{
